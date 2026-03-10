@@ -3,8 +3,8 @@
 using namespace std;
 
 // Method Argument Rule : 
-// Subtype method arguments can be identical or wider than the supertype
-// C++ imposes this by keeping singature identical
+// Subtype methdo arguments can be identical or wider than the supertype
+// C++ imposes this by keeping singatureb identical
 
 class Parent {
 public:
@@ -19,6 +19,7 @@ public:
         cout << "Child: " << msg << endl;
     }
 };
+
 
 //Client that pass string as msg as client expects.
 class Client {

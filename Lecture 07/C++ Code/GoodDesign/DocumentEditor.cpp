@@ -20,7 +20,6 @@ public:
     TextElement(string text) {
         this->text = text;
     }
-
     string render() override {
         return text;
     }
@@ -37,7 +36,7 @@ public:
     }
 
     string render() override {
-        return "[Image: " + imagePath + "]";
+        return "[Image: "+ imagePath + "]";
     }
 };
 

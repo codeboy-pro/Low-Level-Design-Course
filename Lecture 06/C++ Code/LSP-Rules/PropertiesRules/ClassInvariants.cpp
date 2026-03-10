@@ -26,6 +26,7 @@ class CheatAccount : public BankAccount {
 public:
     CheatAccount(double b) : BankAccount(b) {}
 
+
     void withdraw(double amount) override {
         balance -= amount; // LSP break! Negative balance allowed
         cout<< "Amount withdrawn. Remaining balance is " << balance << endl;
