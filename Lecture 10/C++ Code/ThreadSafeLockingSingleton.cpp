@@ -16,6 +16,7 @@ public:
     static Singleton* getInstance() {
         lock_guard<mutex> lock(mtx); // Lock for thread safety
         if (instance == nullptr) {
+
             instance = new Singleton();
         }
          return instance;

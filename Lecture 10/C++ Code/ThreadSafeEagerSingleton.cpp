@@ -19,7 +19,6 @@ public:
  
 // Initialize static members
 Singleton* Singleton::instance = new Singleton();
-
 int main() {
     Singleton* s1 = Singleton::getInstance();
     Singleton* s2 = Singleton::getInstance();
